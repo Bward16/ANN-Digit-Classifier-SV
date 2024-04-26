@@ -1,6 +1,6 @@
 
 module (
-    input logic [:0] a,
+    input logic [31:0] a,
     input logic [31:0] b,
     input logic [31:0] c,
     input logic [31:0] d,
