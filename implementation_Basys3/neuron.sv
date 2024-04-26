@@ -7,7 +7,7 @@ module #( parameter N = 4) (
     output logic [31:0] y
 );
 
-    logic [31:0] sum;
+    logic [31:0] sum, output;
 
     always_comb begin
 
@@ -17,8 +17,10 @@ module #( parameter N = 4) (
             sum += x[i] * w[i];
         end
 
-        y = (sum > sigmoid) ? 1 : 0;
+        output = (sum > sigmoid) ? 1 : 0;
 
     end
+
+    assign y = output;
 
 endmodule
