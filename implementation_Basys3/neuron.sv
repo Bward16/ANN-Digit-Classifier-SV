@@ -1,26 +1,50 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 04/29/2024 02:39:41 PM
+// Design Name: 
+// Module Name: neuron
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
 
-module #( parameter N = 4) (
-    input logic [31:0] x[N],
-    input logic [31:0] w[N],
-    input logic [31:0] bias,
-    input logic [31:0] sigmoid,
-    output logic [31:0] y
+
+module Simple_Neuron#( 
+    parameter INPUT_COUNT = 4, 
+    parameter[31:0] weights [INPUT_COUNT],
+    parameter BIAS,
+    parameter SIGMOID
+    ) 
+    (
+    input [31:0] x[N],
+    input [31:0] bias,
+    output [31:0] result
 );
 
-    logic [31:0] sum, output;
+    logic [31:0] sum;
 
     always_comb begin
 
-        sum = bias;
+        sum = BIAS;
         
         for (int i = 0; i < N; i++) begin
-            sum += x[i] * w[i];
+            sum += x[i] * weights[i];
         end
 
-        output = (sum > sigmoid) ? 1 : 0;
+        result = (sum > SIGMOID) ? 1 : 0;
 
     end
 
-    assign y = output;
 
 endmodule
