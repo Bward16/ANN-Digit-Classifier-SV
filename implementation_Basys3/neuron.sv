@@ -23,7 +23,7 @@
 module Simple_Neuron#( 
     parameter INPUT_COUNT = 4, 
     parameter[31:0] weights [INPUT_COUNT] = {0, 0, 0, 0},
-    parameter BIAS = 0,
+    parameter BIAS = 0
     ) 
     (
     input [31:0] x[INPUT_COUNT],

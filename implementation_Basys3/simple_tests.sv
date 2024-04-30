@@ -32,7 +32,6 @@ module simple_tests(
         4, 
         {1,2,3,4},
         2,
-        4
     ) neuro1
         (
         ins,
