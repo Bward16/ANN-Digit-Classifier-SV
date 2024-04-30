@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/neuron.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Simple_Neuron
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/simple_tests.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simple_tests

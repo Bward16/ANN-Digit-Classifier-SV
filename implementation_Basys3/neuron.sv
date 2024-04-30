@@ -40,7 +40,7 @@ module Simple_Neuron#(
             sum += x[i] * weights[i];
         end
 
-        result = (sum > 0) ? sum : 0;
+        result = ($signed(sum) > 0) ? sum : 0;
 
     end
 
