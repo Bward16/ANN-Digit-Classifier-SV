@@ -22,18 +22,16 @@
 
 module Simple_Neuron#( 
     parameter INPUT_COUNT = 4, 
-    parameter[31:0] weights [INPUT_COUNT] = {0.25, 0.25, 0.25, 0.25},
+    parameter[31:0] weights [INPUT_COUNT] = {0, 0, 0, 0},
     parameter BIAS = 0,
-    parameter SIGMOID = 0.5
     ) 
     (
     input [31:0] x[INPUT_COUNT],
-    input [31:0] bias,
-    output logic [31:0] out
+    output logic [31:0] result
 );
 
-    logic [31:0] sum, result;
-    
+    logic [31:0] sum;
+
     always_comb begin
 
         sum = BIAS;
@@ -42,10 +40,9 @@ module Simple_Neuron#(
             sum += x[i] * weights[i];
         end
 
-        result = (sum > SIGMOID) ? 1 : 0;
+        result = (sum > 0) ? sum : 0;
 
     end
-    
-   assign out = result;
+
 
 endmodule
