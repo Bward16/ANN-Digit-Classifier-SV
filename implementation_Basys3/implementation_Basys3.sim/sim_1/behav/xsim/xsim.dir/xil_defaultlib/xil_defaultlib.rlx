@@ -2,6 +2,7 @@
 2020.2
 Oct 13 2023
 20:47:58
-E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/implementation_Basys3.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,uvm,,,,,,
-E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/neuron.sv,1714521463,systemVerilog,,E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/simple_tests.sv,,Simple_Neuron,,uvm,../../../../,,,,,
-E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/simple_tests.sv,1714521331,systemVerilog,,,,simple_tests,,uvm,../../../../,,,,,
+C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/implementation_Basys3.sim/sim_1/behav/xsim/glbl.v,1714522499,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/neuron.sv,1714616363,systemVerilog,,C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/spiking_neuron.sv,,Simple_Neuron,,uvm,,,,,,
+C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/simple_test_spiking.sv,1714618802,systemVerilog,,,,simple_tests,,uvm,,,,,,
+C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/spiking_neuron.sv,1714618559,systemVerilog,,C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/simple_test_spiking.sv,,spiking_neuron,,uvm,,,,,,

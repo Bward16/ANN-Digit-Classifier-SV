@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log Simple_Neuron.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Simple_Neuron.tcl
+    with args -log spiking_neuron.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source spiking_neuron.tcl
 
 
 ECHO is off.
@@ -13,176 +13,66 @@ ECHO is off.
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
-source Simple_Neuron.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 473.402 ; gain = 180.469
-Command: synth_design -top Simple_Neuron -part xc7a35tcpg236-1
+source spiking_neuron.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 472.855 ; gain = 179.562
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/implementation_Basys3.srcs/utils_1/imports/synth_1/Simple_Neuron.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/implementation_Basys3.srcs/utils_1/imports/synth_1/Simple_Neuron.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top spiking_neuron -part xc7z010iclg225-1L
 Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8524
+INFO: [Synth 8-7075] Helper process launched with PID 23048
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 920.988 ; gain = 443.633
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 924.629 ; gain = 439.270
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Simple_Neuron' [C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/neuron.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'Simple_Neuron' (0#1) [C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/neuron.sv:23]
-WARNING: [Synth 8-3330] design Simple_Neuron has an empty top module
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[31] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[30] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[29] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[28] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[27] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[26] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[25] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[24] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[23] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[22] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[21] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[20] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[19] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[18] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[17] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[16] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[15] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[14] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[13] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[12] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[11] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[10] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[9] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[8] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[7] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[6] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[5] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[4] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[3] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[2] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[1] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[0] driven by constant 0
-WARNING: [Synth 8-7129] Port x[0][31] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][30] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][29] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][28] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][27] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][26] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][25] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][24] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][23] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][22] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][21] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][20] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][19] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][18] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][17] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][16] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][15] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][14] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][13] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][12] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][11] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][10] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][9] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][8] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][7] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][6] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][5] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][4] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][3] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][2] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][1] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[0][0] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][31] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][30] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][29] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][28] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][27] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][26] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][25] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][24] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][23] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][22] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][21] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][20] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][19] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][18] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][17] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][16] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][15] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][14] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][13] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][12] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][11] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][10] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][9] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][8] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][7] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][6] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][5] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][4] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][3] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][2] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][1] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[1][0] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][31] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][30] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][29] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][28] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][27] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][26] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][25] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][24] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][23] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][22] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][21] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][20] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][19] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][18] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][17] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][16] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][15] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][14] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][13] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][12] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][11] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][10] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][9] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][8] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][7] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][6] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][5] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][4] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][3] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][2] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][1] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[2][0] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[3][31] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[3][30] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[3][29] in module Simple_Neuron is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[3][28] in module Simple_Neuron is either unconnected or has no load
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-10604] concatenation with an unsized literal will be treated as 32 bits [C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/spiking_neuron.sv:3]
+WARNING: [Synth 8-10604] concatenation with an unsized literal will be treated as 32 bits [C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/spiking_neuron.sv:3]
+WARNING: [Synth 8-10604] concatenation with an unsized literal will be treated as 32 bits [C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/spiking_neuron.sv:3]
+WARNING: [Synth 8-10604] concatenation with an unsized literal will be treated as 32 bits [C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/spiking_neuron.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'spiking_neuron' [C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/spiking_neuron.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'spiking_neuron' (0#1) [C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/spiking_neuron.sv:1]
+WARNING: [Synth 8-7129] Port positive_spike[0] in module spiking_neuron is either unconnected or has no load
+WARNING: [Synth 8-7129] Port positive_spike[1] in module spiking_neuron is either unconnected or has no load
+WARNING: [Synth 8-7129] Port positive_spike[2] in module spiking_neuron is either unconnected or has no load
+WARNING: [Synth 8-7129] Port positive_spike[3] in module spiking_neuron is either unconnected or has no load
+WARNING: [Synth 8-7129] Port negative_spike[0] in module spiking_neuron is either unconnected or has no load
+WARNING: [Synth 8-7129] Port negative_spike[1] in module spiking_neuron is either unconnected or has no load
+WARNING: [Synth 8-7129] Port negative_spike[2] in module spiking_neuron is either unconnected or has no load
+WARNING: [Synth 8-7129] Port negative_spike[3] in module spiking_neuron is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1027.887 ; gain = 550.531
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1031.320 ; gain = 545.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1027.887 ; gain = 550.531
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1031.320 ; gain = 545.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
-Loading part: xc7a35tcpg236-1
+Loading part: xc7z010iclg225-1L
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1027.887 ; gain = 550.531
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1031.320 ; gain = 545.961
 ---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1027.887 ; gain = 550.531
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1031.320 ; gain = 545.961
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    4 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -190,8 +80,8 @@ Finished RTL Component Statistics
 Start Part Resource Summary
 ---------------------------------------------------------------------------------
 Part Resources:
-DSPs: 90 (col length:60)
-BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
@@ -200,54 +90,29 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3330] design Simple_Neuron has an empty top module
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[31] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[30] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[29] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[28] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[27] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[26] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[25] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[24] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[23] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[22] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[21] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[20] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[19] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[18] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[17] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[16] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[15] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[14] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[13] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[12] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[11] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[10] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[9] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[8] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[7] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[6] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[5] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[4] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[3] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[2] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[1] driven by constant 0
-WARNING: [Synth 8-3917] design Simple_Neuron has port out[0] driven by constant 0
+WARNING: [Synth 8-7129] Port positive_spike[0] in module spiking_neuron is either unconnected or has no load
+WARNING: [Synth 8-7129] Port positive_spike[1] in module spiking_neuron is either unconnected or has no load
+WARNING: [Synth 8-7129] Port positive_spike[2] in module spiking_neuron is either unconnected or has no load
+WARNING: [Synth 8-7129] Port positive_spike[3] in module spiking_neuron is either unconnected or has no load
+WARNING: [Synth 8-7129] Port negative_spike[0] in module spiking_neuron is either unconnected or has no load
+WARNING: [Synth 8-7129] Port negative_spike[1] in module spiking_neuron is either unconnected or has no load
+WARNING: [Synth 8-7129] Port negative_spike[2] in module spiking_neuron is either unconnected or has no load
+WARNING: [Synth 8-7129] Port negative_spike[3] in module spiking_neuron is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 1200.051 ; gain = 722.695
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1220.473 ; gain = 735.113
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 1200.051 ; gain = 722.695
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1220.473 ; gain = 735.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 1200.051 ; gain = 722.695
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1220.473 ; gain = 735.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -265,37 +130,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:30 . Memory (MB): peak = 1200.051 ; gain = 722.695
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1220.473 ; gain = 735.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:30 . Memory (MB): peak = 1200.051 ; gain = 722.695
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1220.473 ; gain = 735.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:30 . Memory (MB): peak = 1200.051 ; gain = 722.695
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1220.473 ; gain = 735.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:30 . Memory (MB): peak = 1200.051 ; gain = 722.695
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1220.473 ; gain = 735.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:30 . Memory (MB): peak = 1200.051 ; gain = 722.695
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1220.473 ; gain = 735.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:30 . Memory (MB): peak = 1200.051 ; gain = 722.695
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1220.473 ; gain = 735.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -311,36 +176,36 @@ Report Cell Usage:
 +------+-----+------+
 |      |Cell |Count |
 +------+-----+------+
-|1     |OBUF |    32|
+|1     |OBUF |     2|
 +------+-----+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |    32|
+|1     |top      |       |     2|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:30 . Memory (MB): peak = 1200.051 ; gain = 722.695
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1220.473 ; gain = 735.113
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 387 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:30 . Memory (MB): peak = 1200.051 ; gain = 722.695
-Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:30 . Memory (MB): peak = 1200.051 ; gain = 722.695
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1220.473 ; gain = 735.113
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1220.473 ; gain = 735.113
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1202.957 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1228.242 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1302.215 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1333.262 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Access is denied.
-Synth Design complete | Checksum: e349a604
+Synth Design complete | Checksum: c81afec8
 INFO: [Common 17-83] Releasing license: Synthesis
-13 Infos, 167 Warnings, 0 Critical Warnings and 0 Errors encountered.
+16 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:33 . Memory (MB): peak = 1302.215 ; gain = 828.812
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1302.215 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/implementation_Basys3.runs/synth_1/Simple_Neuron.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file Simple_Neuron_utilization_synth.rpt -pb Simple_Neuron_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Apr 30 16:25:07 2024...
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1333.262 ; gain = 855.477
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1333.262 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/implementation_Basys3.runs/synth_1/spiking_neuron.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file spiking_neuron_utilization_synth.rpt -pb spiking_neuron_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May  1 19:28:49 2024...

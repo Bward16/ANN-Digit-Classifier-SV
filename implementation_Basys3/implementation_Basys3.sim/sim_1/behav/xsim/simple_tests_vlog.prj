@@ -1,7 +1,7 @@
 # compile verilog/system verilog design source files
-sv xil_defaultlib  --include "../../../../" \
-"../../../../neuron.sv" \
-"../../../../simple_tests.sv" \
+sv xil_defaultlib  \
+"../../../../spiking_neuron.sv" \
+"../../../../simple_test_spiking.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

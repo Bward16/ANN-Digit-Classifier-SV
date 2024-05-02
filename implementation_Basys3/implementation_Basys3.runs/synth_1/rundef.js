@@ -24,7 +24,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log Simple_Neuron.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Simple_Neuron.tcl" );
+         "-log spiking_neuron.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source spiking_neuron.tcl" );
 
 
 
