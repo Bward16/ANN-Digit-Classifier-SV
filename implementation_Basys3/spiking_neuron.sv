@@ -2,13 +2,14 @@ module spiking_neuron#(
     parameter INPUT_COUNT = 4
     parameter weights = {0,0,0,0}
     parameter sum_width = 4
-    // does bias exist in spiking neurons?
-    // parameter BIAS = 0
+    parameter pos_threshold = 1
+    parameter neg_threshold = -1
 )
 (
     input positive_spike[INPUT_COUNT],
     input negative_spike[INPUT_COUNT],
-    output logic spike
+    output logic pos_spike_out,
+    output logic neg_spike out
 );
 
     logic signed [sum_width-1:0] sum;
@@ -27,6 +28,21 @@ module spiking_neuron#(
 
 
     // to do: activation function
+    if(sum > pos_threshold) begin
+        sum -= pos_threshold;
+        pos_spike_out <= 1;
+    end
+    else begin
+        pos_spike_out <= 0;
+    end
+
+    if(sum < neg_threshold) begin
+        sum -= neg_threshold;
+        neg_spike_out <= 1;
+    end
+    else begin
+        neg_spike_out <= 0;
+    end
     
 
     end
