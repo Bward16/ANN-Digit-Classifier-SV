@@ -1,30 +1,29 @@
 module spiking_neuron#(
     parameter INPUT_COUNT = 4
     parameter weights = {0,0,0,0}
+    parameter sum_width = 4
     // does bias exist in spiking neurons?
     // parameter BIAS = 0
 )
 (
-    input x[INPUT_COUNT],
-    output logic result
+    input positive_spike[INPUT_COUNT],
+    input negative_spike[INPUT_COUNT],
+    output logic spike
 );
 
-    logic sum;
+    logic signed [sum_width-1:0] sum;
 
-    always_comb begin
+    always_ff begin
 
-    if(x[0]) begin
-        sum += weights[0];
-    end
-    if(x[1]) begin
-        sum += weights[1];
-    end
-    if(x[2]) begin
-        sum += weights[2];
-    end
-    if(x[3]) begin
-        sum += weights[3];
-    end
+        // make adding to sum based on n bit input
+        for(int i = 0; i < INPUT_COUNT; i++) begin
+            if(positive_spike[i]) begin
+                sum += weights[i];
+            end
+            if(negative_spike[i]) begin
+                sum -= weights[i];
+            end
+        end
 
 
     // to do: activation function
