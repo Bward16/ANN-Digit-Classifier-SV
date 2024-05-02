@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module simple_tests_spiking(
+module simple_tests(
 
     );
 

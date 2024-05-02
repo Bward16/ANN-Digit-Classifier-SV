@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module simple_tests();
+module simple_tests_spiking();
     logic clk;
     logic reset;
     logic [3:0] pos_ins;  // Array should be declared like this for bit indexing
