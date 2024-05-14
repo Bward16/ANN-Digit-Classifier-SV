@@ -1,17 +1,26 @@
 Vivado Simulator v2023.2
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot simple_tests_behav xil_defaultlib.simple_tests xil_defaultlib.glbl -log elaborate.log 
+Running: E:/Xilinx/Vivado/2023.2/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot simple_tests_behav xil_defaultlib.simple_tests xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-8860] concatenation '{1,2,3,4}' cannot be used within unpacked array concatenation for unpacked type target [../../../../parameters.vh:19]
+WARNING: [VRFC 10-8860] concatenation '{1,2,3,4}' cannot be used within unpacked array concatenation for unpacked type target [../../../../parameters.vh:20]
+WARNING: [VRFC 10-8860] concatenation '{1,2,3,4}' cannot be used within unpacked array concatenation for unpacked type target [../../../../parameters.vh:21]
+WARNING: [VRFC 10-8860] concatenation '{1,2,3,4}' cannot be used within unpacked array concatenation for unpacked type target [../../../../parameters.vh:22]
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/spiking_neuron.sv" Line 1. Module spiking_neuron(weights='{1,2,3,4},sum_width=6,pos_threshold=10,neg_threshold=-10) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/spiking_neuron.sv" Line 1. Module spiking_neuron(weights='{1,2,3,4},sum_width=6,pos_threshold=10,neg_threshold=-10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/neural_net.sv" Line 1. Module neural_net_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/neural_net.sv" Line 1. Module neural_net_default doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.spiking_neuron(weights='{1,2,3,4...
+Compiling module xil_defaultlib.Simple_Neuron(weights='{1,2,3,4}...
+Compiling module xil_defaultlib.Simple_Neuron(weights='{1,2,3,4}...
+Compiling module xil_defaultlib.Simple_Neuron(weights='{1,2,3,4}...
+Compiling module xil_defaultlib.Simple_Neuron(weights='{1,2,3,4}...
+Compiling module xil_defaultlib.neuron_layer(LAYER_NUM=0,WEIGHTS...
+Compiling module xil_defaultlib.neural_net_default
 Compiling module xil_defaultlib.simple_tests
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot simple_tests_behav

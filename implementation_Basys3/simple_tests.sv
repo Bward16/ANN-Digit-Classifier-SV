@@ -7,14 +7,8 @@ module simple_tests(
     logic clk;
     logic [31:0] ins[4];
     
-    Simple_Neuron#( 
-        4, 
-        {1,2,3,4},
-        2
-    ) neuro1
-        (
-        ins,
-        out
+    neural_net nnet(
+        ins
     );
  
 
