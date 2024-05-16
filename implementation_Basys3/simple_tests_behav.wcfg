@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="172.590 ns"></ZoomEndTime>
-      <Cursor1Time time="7.495 ns"></Cursor1Time>
+      <ZoomEndTime time="110.233 ns"></ZoomEndTime>
+      <Cursor1Time time="2.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="116"></NameColumnWidth>
-      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+      <NameColumnWidth column_width="131"></NameColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="3" />
+   <WVObjectSize size="6" />
    <wvobject fp_name="/simple_tests/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -27,11 +27,57 @@
    <wvobject fp_name="/simple_tests/nnet/inputs" type="array">
       <obj_property name="ElementShortName">inputs[0:3][31:0]</obj_property>
       <obj_property name="ObjectShortName">inputs[0:3][31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/simple_tests/nnet/dendrons_layer_0" type="array">
-      <obj_property name="ElementShortName">dendrons_layer_0[0:3][31:0]</obj_property>
-      <obj_property name="ObjectShortName">dendrons_layer_0[0:3][31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="group33" type="group">
+      <obj_property name="label">layer0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[0].s_lay /dendrons" type="array">
+         <obj_property name="ElementShortName">dendrons[0:3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">dendrons[0:3][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[0].s_lay /axons" type="array">
+         <obj_property name="ElementShortName">axons[0:3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">axons[0:3][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group34" type="group">
+      <obj_property name="label">layer1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[1].s_lay /dendrons" type="array">
+         <obj_property name="ElementShortName">dendrons[0:3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">dendrons[0:3][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[1].s_lay /axons" type="array">
+         <obj_property name="ElementShortName">axons[0:3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">axons[0:3][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group35" type="group">
+      <obj_property name="label">layer2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[2].s_lay /dendrons" type="array">
+         <obj_property name="ElementShortName">dendrons[0:3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">dendrons[0:3][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[2].s_lay /axons" type="array">
+         <obj_property name="ElementShortName">axons[0:3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">axons[0:3][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group38" type="group">
+      <obj_property name="label">layer3</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[3].s_lay /dendrons" type="array">
+         <obj_property name="ElementShortName">dendrons[0:3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">dendrons[0:3][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[3].s_lay /axons" type="array">
+         <obj_property name="ElementShortName">axons[0:3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">axons[0:3][31:0]</obj_property>
+      </wvobject>
    </wvobject>
 </wave_config>

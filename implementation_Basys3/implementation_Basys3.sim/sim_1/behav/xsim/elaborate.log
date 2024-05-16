@@ -5,22 +5,6 @@ Running: E:/Xilinx/Vivado/2023.2/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe -
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-8860] concatenation '{1,2,3,4}' cannot be used within unpacked array concatenation for unpacked type target [../../../../parameters.vh:19]
-WARNING: [VRFC 10-8860] concatenation '{1,2,3,4}' cannot be used within unpacked array concatenation for unpacked type target [../../../../parameters.vh:20]
-WARNING: [VRFC 10-8860] concatenation '{1,2,3,4}' cannot be used within unpacked array concatenation for unpacked type target [../../../../parameters.vh:21]
-WARNING: [VRFC 10-8860] concatenation '{1,2,3,4}' cannot be used within unpacked array concatenation for unpacked type target [../../../../parameters.vh:22]
-Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/neural_net.sv" Line 1. Module neural_net_default doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/neural_net.sv" Line 1. Module neural_net_default doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Simple_Neuron(weights='{1,2,3,4}...
-Compiling module xil_defaultlib.Simple_Neuron(weights='{1,2,3,4}...
-Compiling module xil_defaultlib.Simple_Neuron(weights='{1,2,3,4}...
-Compiling module xil_defaultlib.Simple_Neuron(weights='{1,2,3,4}...
-Compiling module xil_defaultlib.neuron_layer(LAYER_NUM=0,WEIGHTS...
-Compiling module xil_defaultlib.neural_net_default
-Compiling module xil_defaultlib.simple_tests
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot simple_tests_behav
+WARNING: [VRFC 10-9466] unpacked array widths (3 versus 4) do not match [E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/neural_net.sv:29]
+ERROR: [VRFC 10-666] expression has 4 elements; expected 3 [E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/neural_net.sv:29]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

@@ -22,8 +22,8 @@
 
 module neuron_layer#( 
     parameter LAYER_NUM,
-    parameter PREV_WIDTH = 4,
-    parameter WIDTH = 4,
+    parameter PREV_WIDTH,
+    parameter WIDTH,
     parameter int WEIGHTS[WIDTH][PREV_WIDTH],
     parameter int BIASES[WIDTH]
     )(
@@ -33,6 +33,8 @@ module neuron_layer#(
     );
 
 
+
+    
     genvar neuron;
     generate
         for (neuron = 0; neuron < WIDTH; neuron = neuron + 1) begin
@@ -49,4 +51,7 @@ module neuron_layer#(
 
         end
     endgenerate
+    
+
+    
 endmodule
