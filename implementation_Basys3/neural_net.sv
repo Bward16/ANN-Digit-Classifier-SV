@@ -1,14 +1,11 @@
 module neural_net#( 
-    parameter LAYERS = 4,
-    parameter int LAYER_WIDTHS[5] = {4,4,4,4,4}
+
     ) (
     input [31:0] inputs[LAYER_WIDTHS[0]],
     output [31:0] outputs[LAYER_WIDTHS[LAYERS-1]]
 
 );
 `include "parameters.vh"
-
-    
 
     genvar layer;
     generate
@@ -26,7 +23,7 @@ module neural_net#(
                 layer,
                 LAYER_WIDTHS[layer], 
                 LAYER_WIDTHS[layer+1], 
-                WEIGHTS, 
+                WEIGHTS[layer], 
                 BIASES[layer]) s_lay(
 
                 dendrons,
