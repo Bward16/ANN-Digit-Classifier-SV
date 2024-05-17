@@ -12,9 +12,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/Vivado/2023.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2023.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2023.2/bin
+  PATH=E:/Xilinx/Vivado/2023.2/Vitis/2023.2/bin;E:/Xilinx/Vivado/2023.2/Vivado/2023.2/ids_lite/ISE/bin/nt64;E:/Xilinx/Vivado/2023.2/Vivado/2023.2/ids_lite/ISE/lib/nt64:E:/Xilinx/Vivado/2023.2/Vivado/2023.2/bin
 else
-  PATH=C:/Xilinx/Vivado/2023.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2023.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2023.2/bin:$PATH
+  PATH=E:/Xilinx/Vivado/2023.2/Vitis/2023.2/bin;E:/Xilinx/Vivado/2023.2/Vivado/2023.2/ids_lite/ISE/bin/nt64;E:/Xilinx/Vivado/2023.2/Vivado/2023.2/ids_lite/ISE/lib/nt64:E:/Xilinx/Vivado/2023.2/Vivado/2023.2/bin:$PATH
 fi
 export PATH
 
@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/implementation_Basys3.runs/synth_1'
+HD_PWD='E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/implementation_Basys3.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log spiking_neuron.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source spiking_neuron.tcl
+EAStep vivado -log neural_net.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source neural_net.tcl

@@ -1,3 +1,5 @@
+
+
 module neural_net#( 
 
     ) (
@@ -23,8 +25,8 @@ module neural_net#(
                 layer,
                 LAYER_WIDTHS[layer], 
                 LAYER_WIDTHS[layer+1], 
-                WEIGHTS[layer], 
-                BIASES[layer]) s_lay(
+                WEIGHTS[layer][0:+LAYER_WIDTHS[layer+1]-1], 
+                BIASES[layer][0:+LAYER_WIDTHS[layer+1]-1]) s_lay(
 
                 dendrons,
                 axons

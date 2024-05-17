@@ -1,10 +1,10 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Wed May  1 19:28:49 2024
-| Host         : computer running 64-bit major release  (build 9200)
-| Command      : report_utilization -file spiking_neuron_utilization_synth.rpt -pb spiking_neuron_utilization_synth.pb
-| Design       : spiking_neuron
+| Date         : Thu May 16 17:01:59 2024
+| Host         : WINDOWS-RV84OD0 running 64-bit major release  (build 9200)
+| Command      : report_utilization -file neural_net_utilization_synth.rpt -pb neural_net_utilization_synth.pb
+| Design       : neural_net
 | Device       : xc7z010iclg225-1L
 | Speed File   : -1L
 | Design State : Synthesized
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |    0 |     0 |          0 |     17600 |  0.00 |
-|   LUT as Logic          |    0 |     0 |          0 |     17600 |  0.00 |
+| Slice LUTs*             | 3746 |     0 |          0 |     17600 | 21.28 |
+|   LUT as Logic          | 3746 |     0 |          0 |     17600 | 21.28 |
 |   LUT as Memory         |    0 |     0 |          0 |      6000 |  0.00 |
 | Slice Registers         |    0 |     0 |          0 |     35200 |  0.00 |
 |   Register as Flip Flop |    0 |     0 |          0 |     35200 |  0.00 |
@@ -89,24 +89,24 @@ Warning! LUT value is adjusted to account for LUT combining.
 4. IO and GT Specific
 ---------------------
 
-+-----------------------------+------+-------+------------+-----------+-------+
-|          Site Type          | Used | Fixed | Prohibited | Available | Util% |
-+-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |    2 |     0 |          0 |        54 |  3.70 |
-| Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
-| Bonded IOPADs               |    0 |     0 |          0 |       130 |  0.00 |
-| PHY_CONTROL                 |    0 |     0 |          0 |         2 |  0.00 |
-| PHASER_REF                  |    0 |     0 |          0 |         2 |  0.00 |
-| OUT_FIFO                    |    0 |     0 |          0 |         8 |  0.00 |
-| IN_FIFO                     |    0 |     0 |          0 |         8 |  0.00 |
-| IDELAYCTRL                  |    0 |     0 |          0 |         2 |  0.00 |
-| IBUFDS                      |    0 |     0 |          0 |        54 |  0.00 |
-| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |          0 |         8 |  0.00 |
-| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |          0 |         8 |  0.00 |
-| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |          0 |       100 |  0.00 |
-| ILOGIC                      |    0 |     0 |          0 |        54 |  0.00 |
-| OLOGIC                      |    0 |     0 |          0 |        54 |  0.00 |
-+-----------------------------+------+-------+------------+-----------+-------+
++-----------------------------+------+-------+------------+-----------+--------+
+|          Site Type          | Used | Fixed | Prohibited | Available |  Util% |
++-----------------------------+------+-------+------------+-----------+--------+
+| Bonded IOB                  |  252 |     0 |          0 |        54 | 466.67 |
+| Bonded IPADs                |    0 |     0 |          0 |         2 |   0.00 |
+| Bonded IOPADs               |    0 |     0 |          0 |       130 |   0.00 |
+| PHY_CONTROL                 |    0 |     0 |          0 |         2 |   0.00 |
+| PHASER_REF                  |    0 |     0 |          0 |         2 |   0.00 |
+| OUT_FIFO                    |    0 |     0 |          0 |         8 |   0.00 |
+| IN_FIFO                     |    0 |     0 |          0 |         8 |   0.00 |
+| IDELAYCTRL                  |    0 |     0 |          0 |         2 |   0.00 |
+| IBUFDS                      |    0 |     0 |          0 |        54 |   0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |          0 |         8 |   0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |          0 |         8 |   0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |          0 |       100 |   0.00 |
+| ILOGIC                      |    0 |     0 |          0 |        54 |   0.00 |
+| OLOGIC                      |    0 |     0 |          0 |        54 |   0.00 |
++-----------------------------+------+-------+------------+-----------+--------+
 
 
 5. Clocking
@@ -148,7 +148,15 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| OBUF     |    2 |                  IO |
+| LUT2     | 2489 |                 LUT |
+| LUT3     | 1086 |                 LUT |
+| LUT4     |  981 |                 LUT |
+| CARRY4   |  768 |          CarryLogic |
+| IBUF     |  220 |                  IO |
+| LUT6     |  207 |                 LUT |
+| LUT5     |  189 |                 LUT |
+| LUT1     |   45 |                 LUT |
+| OBUF     |   32 |                  IO |
 +----------+------+---------------------+
 
 

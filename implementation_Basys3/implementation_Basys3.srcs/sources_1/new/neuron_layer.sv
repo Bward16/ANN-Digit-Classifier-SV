@@ -24,7 +24,7 @@ module neuron_layer#(
     parameter LAYER_NUM,
     parameter PREV_WIDTH,
     parameter WIDTH,
-    parameter int WEIGHTS[WIDTH][PREV_WIDTH],
+    parameter int WEIGHTS[WIDTH][7],
     parameter int BIASES[WIDTH]
     )(
         input [31:0] dendrons [PREV_WIDTH],
@@ -41,7 +41,7 @@ module neuron_layer#(
 
             Simple_Neuron #(
                 PREV_WIDTH, 
-                WEIGHTS[neuron], 
+                WEIGHTS[neuron][0+:PREV_WIDTH], 
                 BIASES[neuron]) s_neur(
 
                 dendrons,
