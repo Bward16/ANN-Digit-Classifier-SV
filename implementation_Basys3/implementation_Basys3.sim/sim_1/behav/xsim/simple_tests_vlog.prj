@@ -1,5 +1,6 @@
 # compile verilog/system verilog design source files
 sv xil_defaultlib  --include "../../../../" \
+"../../../../implementation_Basys3.srcs/sources_1/new/mem_reader.sv" \
 "../../../../neural_net.sv" \
 "../../../../neuron.sv" \
 "../../../../implementation_Basys3.srcs/sources_1/new/neuron_layer.sv" \

@@ -3,10 +3,20 @@ module simple_tests(
 
     );
 
+    parameter IN_WIDTH = 7;
+
     logic clk;
-    logic [31:0] ins[7];
+    logic [31:0] ins[IN_WIDTH];
     logic [31:0] outs[1];
-    
+    logic [31:0] addr = 0;
+
+    Memory_Reader#(IN_WIDTH) memy_ready(
+    clk,
+    1,        
+    addr,
+    ins  // Instruction
+    );
+
     neural_net nnet(
         ins,
         outs
@@ -20,13 +30,14 @@ module simple_tests(
         forever #1 clk <= ~clk;
     end
     initial begin
-            ins = {0,0,0,0,0,0,0};
-
-            #2 
-            ins = {1,2,3,4,5,6,7};
+            
+            addr = 0;
+            #50 
+            addr = addr + IN_WIDTH;
 
             #50
-            ins = {0,0,0,0,0,0,0};;
+            addr = addr + IN_WIDTH;
+            
 
     end
 
