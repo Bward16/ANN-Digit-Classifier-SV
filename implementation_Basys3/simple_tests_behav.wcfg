@@ -11,42 +11,46 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="191.441 ns"></ZoomEndTime>
-      <Cursor1Time time="2.000 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="94.800001 us"></ZoomEndTime>
+      <Cursor1Time time="0.002000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="131"></NameColumnWidth>
-      <ValueColumnWidth column_width="60"></ValueColumnWidth>
+      <NameColumnWidth column_width="201"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="9" />
+   <WVObjectSize size="12" />
    <wvobject fp_name="/simple_tests/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
+   <wvobject fp_name="/simple_tests/memy_ready/mem_dout1" type="array">
+      <obj_property name="ElementShortName">mem_dout1[0:6][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_dout1[0:6][31:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/simple_tests/nnet/inputs" type="array">
-      <obj_property name="ElementShortName">inputs[0:6][31:0]</obj_property>
-      <obj_property name="ObjectShortName">inputs[0:6][31:0]</obj_property>
+      <obj_property name="ElementShortName">inputs[0:783][31:0]</obj_property>
+      <obj_property name="ObjectShortName">inputs[0:783][31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/simple_tests/outs" type="array">
       <obj_property name="ElementShortName">outs[0:0][31:0]</obj_property>
       <obj_property name="ObjectShortName">outs[0:0][31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/simple_tests/nnet/outputs" type="array">
-      <obj_property name="ElementShortName">outputs[0:0][31:0]</obj_property>
-      <obj_property name="ObjectShortName">outputs[0:0][31:0]</obj_property>
+      <obj_property name="ElementShortName">outputs[0:9][31:0]</obj_property>
+      <obj_property name="ObjectShortName">outputs[0:9][31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="group33" type="group">
       <obj_property name="label">layer0</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/simple_tests/nnet/\module_inst[0].s_lay /dendrons" type="array">
-         <obj_property name="ElementShortName">dendrons[0:6][31:0]</obj_property>
-         <obj_property name="ObjectShortName">dendrons[0:6][31:0]</obj_property>
+         <obj_property name="ElementShortName">dendrons[0:783][31:0]</obj_property>
+         <obj_property name="ObjectShortName">dendrons[0:783][31:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/simple_tests/nnet/\module_inst[0].s_lay /axons" type="array">
-         <obj_property name="ElementShortName">axons[0:6][31:0]</obj_property>
-         <obj_property name="ObjectShortName">axons[0:6][31:0]</obj_property>
+         <obj_property name="ElementShortName">axons[0:49][31:0]</obj_property>
+         <obj_property name="ObjectShortName">axons[0:49][31:0]</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group34" type="group">
@@ -54,12 +58,12 @@
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/simple_tests/nnet/\module_inst[1].s_lay /dendrons" type="array">
-         <obj_property name="ElementShortName">dendrons[0:6][31:0]</obj_property>
-         <obj_property name="ObjectShortName">dendrons[0:6][31:0]</obj_property>
+         <obj_property name="ElementShortName">dendrons[0:49][31:0]</obj_property>
+         <obj_property name="ObjectShortName">dendrons[0:49][31:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/simple_tests/nnet/\module_inst[1].s_lay /axons" type="array">
-         <obj_property name="ElementShortName">axons[0:4][31:0]</obj_property>
-         <obj_property name="ObjectShortName">axons[0:4][31:0]</obj_property>
+         <obj_property name="ElementShortName">axons[0:19][31:0]</obj_property>
+         <obj_property name="ObjectShortName">axons[0:19][31:0]</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group35" type="group">
@@ -67,12 +71,12 @@
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/simple_tests/nnet/\module_inst[2].s_lay /dendrons" type="array">
-         <obj_property name="ElementShortName">dendrons[0:4][31:0]</obj_property>
-         <obj_property name="ObjectShortName">dendrons[0:4][31:0]</obj_property>
+         <obj_property name="ElementShortName">dendrons[0:19][31:0]</obj_property>
+         <obj_property name="ObjectShortName">dendrons[0:19][31:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/simple_tests/nnet/\module_inst[2].s_lay /axons" type="array">
-         <obj_property name="ElementShortName">axons[0:1][31:0]</obj_property>
-         <obj_property name="ObjectShortName">axons[0:1][31:0]</obj_property>
+         <obj_property name="ElementShortName">axons[0:9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">axons[0:9][31:0]</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group38" type="group">
@@ -80,25 +84,27 @@
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/simple_tests/nnet/\module_inst[3].s_lay /dendrons" type="array">
-         <obj_property name="ElementShortName">dendrons[0:1][31:0]</obj_property>
-         <obj_property name="ObjectShortName">dendrons[0:1][31:0]</obj_property>
+         <obj_property name="ElementShortName">dendrons[0:9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">dendrons[0:9][31:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/simple_tests/nnet/\module_inst[3].s_lay /axons" type="array">
-         <obj_property name="ElementShortName">axons[0:0][31:0]</obj_property>
-         <obj_property name="ObjectShortName">axons[0:0][31:0]</obj_property>
+         <obj_property name="ElementShortName">axons[0:9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">axons[0:9][31:0]</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group307" type="group">
       <obj_property name="label">layer5</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="/simple_tests/nnet/\module_inst[4].s_lay /dendrons" type="array">
-         <obj_property name="ElementShortName">dendrons[0:0][31:0]</obj_property>
-         <obj_property name="ObjectShortName">dendrons[0:0][31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/simple_tests/nnet/\module_inst[4].s_lay /axons" type="array">
-         <obj_property name="ElementShortName">axons[0:0][31:0]</obj_property>
-         <obj_property name="ObjectShortName">axons[0:0][31:0]</obj_property>
-      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/simple_tests/nnet/\module_inst[2].s_lay /WEIGHTS" type="array">
+      <obj_property name="ElementShortName">WEIGHTS[0:9][0:19][31:0]</obj_property>
+      <obj_property name="ObjectShortName">WEIGHTS[0:9][0:19][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/simple_tests/nnet/LAYER_WIDTHS" type="array">
+      <obj_property name="ElementShortName">LAYER_WIDTHS[0:4][31:0]</obj_property>
+      <obj_property name="ObjectShortName">LAYER_WIDTHS[0:4][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
 </wave_config>

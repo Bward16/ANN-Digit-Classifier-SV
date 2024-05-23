@@ -4,82 +4,68 @@
   <File Type="PA-TCL" Name="neural_net.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="neural_net_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="neural_net_reports.tcl"/>
-  <File Type="OPT-RQA-PB" Name="neural_net_rqa_opted.pb"/>
+  <File Type="BITSTR-MSK" Name="neural_net.msk"/>
+  <File Type="ROUTE-CLK" Name="neural_net_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="neural_net.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="neural_net_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="neural_net.bit"/>
+  <File Type="BG-DRC" Name="neural_net.drc"/>
+  <File Type="BG-BGN" Name="neural_net.bgn"/>
+  <File Type="BG-BIN" Name="neural_net.bin"/>
+  <File Type="BITSTR-RBT" Name="neural_net.rbt"/>
+  <File Type="BITSTR-NKY" Name="neural_net.nky"/>
+  <File Type="BITSTR-BMM" Name="neural_net_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="neural_net.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="neural_net_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="neural_net_timing_summary_init.rpt"/>
-  <File Type="OPT-TIMING" Name="neural_net_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="neural_net_opt.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="neural_net_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="neural_net.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="neural_net_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="neural_net.ltx"/>
+  <File Type="BOOT-PDI-FILE" Name="neural_net_boot.pdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="NPI_FILE" Name="neural_net.npi"/>
   <File Type="OPT-DRC" Name="neural_net_drc_opted.rpt"/>
+  <File Type="RBD_FILE" Name="neural_net.rbd"/>
   <File Type="OPT-HWDEF" Name="neural_net.hwdef"/>
-  <File Type="PWROPT-DCP" Name="neural_net_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="neural_net_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="neural_net_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="neural_net_placed.dcp"/>
   <File Type="PLACE-IO" Name="neural_net_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="neural_net_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="neural_net_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="neural_net_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="neural_net_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="neural_net_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="neural_net_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="neural_net.bin"/>
-  <File Type="PLACE-TIMING" Name="neural_net_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="neural_net_power_routed.rpx"/>
-  <File Type="PLACE-RQA-PB" Name="neural_net_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="neural_net_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="neural_net.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="neural_net_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="neural_net_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="neural_net_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="neural_net.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="neural_net_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="neural_net_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="neural_net_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="neural_net_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="neural_net_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="neural_net_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="neural_net_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="neural_net_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="neural_net_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="neural_net_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="neural_net_rqs_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="neural_net_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="neural_net_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="neural_net_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="neural_net_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="neural_net_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="neural_net_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="neural_net_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="neural_net_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="neural_net_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="neural_net_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="neural_net_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="neural_net_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="neural_net_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="neural_net_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="neural_net_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="neural_net_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="neural_net_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="neural_net_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="neural_net_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="neural_net_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="neural_net_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="spiking_neuron_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="spiking_neuron_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="spiking_neuron_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="spiking_neuron_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="neural_net.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="spiking_neuron_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="spiking_neuron_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="neural_net.nky"/>
-  <File Type="BITSTR-BMM" Name="neural_net_bd.bmm"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="neural_net_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="neural_net_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="neural_net_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="neural_net_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="neural_net_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="neural_net_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="neural_net_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="neural_net.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="neural_net_boot.pdi"/>
   <File Type="PL-PDI-FILE" Name="neural_net_pld.pdi"/>
   <File Type="RCFI_FILE" Name="neural_net.rcfi"/>
   <File Type="CFI_FILE" Name="neural_net.cfi"/>
   <File Type="RNPI_FILE" Name="neural_net.rnpi"/>
-  <File Type="NPI_FILE" Name="neural_net.npi"/>
-  <File Type="RBD_FILE" Name="neural_net.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="neural_net.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="neural_net.sysdef"/>
-  <File Type="BG-BGN" Name="neural_net.bgn"/>
-  <File Type="BG-DRC" Name="neural_net.drc"/>
-  <File Type="RDI-RDI" Name="neural_net.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="ROUTE-RQS" Name="neural_net_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="neural_net_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
@@ -159,5 +145,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

@@ -3,7 +3,7 @@ module simple_tests(
 
     );
 
-    parameter IN_WIDTH = 7;
+    parameter IN_WIDTH = 784;
 
     logic clk;
     logic [31:0] ins[IN_WIDTH];
