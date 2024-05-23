@@ -1,0 +1,36 @@
+Tensor name: inputs
+  Scale: [0.00392157]
+  Zero point: [-128]
+
+Tensor name: sequential_10/dense/MatMul
+  Scale: [0.00763588]
+  Zero point: [0]
+
+Tensor name: sequential_10/dense/BiasAdd/ReadVariableOp/resource
+  Scale: [2.9944636e-05]
+  Zero point: [0]
+
+Tensor name: sequential_10/dense_1/MatMul
+  Scale: [0.00877394]
+  Zero point: [0]
+
+Tensor name: sequential_10/dense_1/BiasAdd/ReadVariableOp/resource
+  Scale: [0.00038594]
+  Zero point: [0]
+
+Tensor name: sequential_10/dense_2/MatMul
+  Scale: [0.00900361]
+  Zero point: [0]
+
+Tensor name: sequential_10/dense_2/BiasAdd/ReadVariableOp/resource
+  Scale: [0.00084419]
+  Zero point: [0]
+
+Tensor name: sequential_10/dense_3/MatMul
+  Scale: [0.0096693]
+  Zero point: [0]
+
+Tensor name: sequential_10/dense_3/BiasAdd/ReadVariableOp/resource
+  Scale: [0.00125457]
+  Zero point: [0]
+
