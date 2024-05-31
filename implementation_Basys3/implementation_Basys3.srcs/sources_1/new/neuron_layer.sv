@@ -27,8 +27,8 @@ module neuron_layer#(
     parameter int WEIGHTS[WIDTH][PREV_WIDTH],
     parameter int BIASES[WIDTH]
     )(
-        input [31:0] dendrons [PREV_WIDTH],
-        output[31:0] axons    [WIDTH]
+        input [7:0] dendrons [PREV_WIDTH],
+        output[7:0] axons    [WIDTH]
 
     );
 

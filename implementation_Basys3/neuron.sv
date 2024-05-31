@@ -5,11 +5,11 @@ module Simple_Neuron#(
     parameter BIAS = 0
     ) 
     (
-    input [31:0] x[INPUT_COUNT],
+    input [7:0] x[INPUT_COUNT],
     output logic [31:0] result
 );
 
-    logic [31:0] sum;
+    logic [7:0] sum;
 
     always_comb begin
 

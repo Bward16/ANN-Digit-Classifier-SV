@@ -3,12 +3,12 @@ module simple_tests(
 
     );
 
-    parameter IN_WIDTH = 784;
+    parameter IN_WIDTH = 16;
 
     logic clk;
-    logic [31:0] ins[IN_WIDTH];
-    logic [31:0] outs[1];
-    logic [31:0] addr = 0;
+    logic [7:0] ins[IN_WIDTH];
+    logic [7:0] outs[1];
+    logic [7:0] addr = 0;
 
     Memory_Reader#(IN_WIDTH) memy_ready(
     clk,
@@ -35,8 +35,12 @@ module simple_tests(
             #50 
             addr = addr + IN_WIDTH;
 
-            #50
-            addr = addr + IN_WIDTH;
+
+            $finish;
+
+            // #50
+            // addr = addr + IN_WIDTH;
+            
             
 
     end
