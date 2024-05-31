@@ -11,55 +11,104 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="99,999.221 ns"></ZoomStartTime>
-      <ZoomEndTime time="100,000.156 ns"></ZoomEndTime>
-      <Cursor1Time time="100,000.000 ns"></Cursor1Time>
+      <ZoomStartTime time="23.349 ns"></ZoomStartTime>
+      <ZoomEndTime time="49.595 ns"></ZoomEndTime>
+      <Cursor1Time time="50.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="197"></NameColumnWidth>
-      <ValueColumnWidth column_width="305"></ValueColumnWidth>
+      <ValueColumnWidth column_width="301"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="10" />
+   <WVObjectSize size="8" />
    <wvobject fp_name="/simple_tests/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="group33" type="group">
+   <wvobject fp_name="/simple_tests/nnet/inputs" type="array">
+      <obj_property name="ElementShortName">inputs[0:1][7:0]</obj_property>
+      <obj_property name="ObjectShortName">inputs[0:1][7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/simple_tests/memy_ready/memory" type="array">
+      <obj_property name="ElementShortName">memory[0:15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[0:15][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simple_tests/memy_ready/mem_dout1" type="array">
+      <obj_property name="ElementShortName">mem_dout1[0:15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_dout1[0:15][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simple_tests/ins" type="array">
+      <obj_property name="ElementShortName">ins[0:15][7:0]</obj_property>
+      <obj_property name="ObjectShortName">ins[0:15][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group3993" type="group">
       <obj_property name="label">layer0</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[0].s_lay /BIASES" type="array">
+         <obj_property name="ElementShortName">BIASES[0:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">BIASES[0:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[0].s_lay /LAYER_NUM" type="array">
+         <obj_property name="ElementShortName">LAYER_NUM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LAYER_NUM[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[0].s_lay /PREV_WIDTH" type="array">
+         <obj_property name="ElementShortName">PREV_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PREV_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[0].s_lay /WEIGHTS" type="array">
+         <obj_property name="ElementShortName">WEIGHTS[0:0][0:1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">WEIGHTS[0:0][0:1][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[0].s_lay /WIDTH" type="array">
+         <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[0].s_lay /dendrons" type="array">
+         <obj_property name="ElementShortName">dendrons[0:1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">dendrons[0:1][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[0].s_lay /axons" type="array">
+         <obj_property name="ElementShortName">axons[0:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">axons[0:0][7:0]</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/simple_tests/nnet/\module_inst[0].dendrons [0]" type="array">
-      <obj_property name="ElementShortName">[0][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+   <wvobject fp_name="/simple_tests/nnet/\module_inst[0].s_lay /axons[0]" type="array">
+      <obj_property name="ElementShortName">[0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[0][7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/simple_tests/nnet/\module_inst[0].dendrons [1]" type="array">
-      <obj_property name="ElementShortName">[1][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[1][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="group34" type="group">
+   <wvobject fp_name="group3993" type="group">
       <obj_property name="label">layer1</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
-   </wvobject>
-   <wvobject fp_name="/simple_tests/nnet/\module_inst[1].axons [0]" type="array">
-      <obj_property name="ElementShortName">[0][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[0][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/simple_tests/nnet/\module_inst[1].axons [1]" type="array">
-      <obj_property name="ElementShortName">[1][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[1][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/simple_tests/memy_ready/memory" type="array">
-      <obj_property name="ElementShortName">memory[0:783][31:0]</obj_property>
-      <obj_property name="ObjectShortName">memory[0:783][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/simple_tests/memy_ready/mem_dout1" type="array">
-      <obj_property name="ElementShortName">mem_dout1[0:783][31:0]</obj_property>
-      <obj_property name="ObjectShortName">mem_dout1[0:783][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/simple_tests/ins" type="array">
-      <obj_property name="ElementShortName">ins[0:783][31:0]</obj_property>
-      <obj_property name="ObjectShortName">ins[0:783][31:0]</obj_property>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[1].s_lay /BIASES" type="array">
+         <obj_property name="ElementShortName">BIASES[0:1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">BIASES[0:1][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[1].s_lay /LAYER_NUM" type="array">
+         <obj_property name="ElementShortName">LAYER_NUM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LAYER_NUM[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[1].s_lay /PREV_WIDTH" type="array">
+         <obj_property name="ElementShortName">PREV_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PREV_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[1].s_lay /WEIGHTS" type="array">
+         <obj_property name="ElementShortName">WEIGHTS[0:1][0:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">WEIGHTS[0:1][0:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[1].s_lay /WIDTH" type="array">
+         <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[1].s_lay /dendrons" type="array">
+         <obj_property name="ElementShortName">dendrons[0:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">dendrons[0:0][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simple_tests/nnet/\module_inst[1].s_lay /axons" type="array">
+         <obj_property name="ElementShortName">axons[0:1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">axons[0:1][7:0]</obj_property>
+      </wvobject>
    </wvobject>
 </wave_config>
