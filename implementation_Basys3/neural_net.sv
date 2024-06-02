@@ -1,8 +1,8 @@
 module neural_net#( 
 
     ) (
-    input [127:0] inputs[LAYER_WIDTHS[0]],
-    output [127:0] outputs[LAYER_WIDTHS[LAYERS]]
+    input [63:0] inputs[LAYER_WIDTHS[0]],
+    output [63:0] outputs[LAYER_WIDTHS[LAYERS]]
 
 );
 `include "parameters.vh"
@@ -13,8 +13,8 @@ module neural_net#(
         
         for (layer = 0; layer < LAYERS; layer = layer + 1) begin : module_inst
 
-            wire [127:0] dendrons[LAYER_WIDTHS[layer]];
-            wire [127:0] axons[LAYER_WIDTHS[layer+1]];
+            wire [63:0] dendrons[LAYER_WIDTHS[layer]];
+            wire [63:0] axons[LAYER_WIDTHS[layer+1]];
 
             if(layer == 0) assign dendrons = inputs;
             else assign dendrons = module_inst[layer-1].s_lay.axons;

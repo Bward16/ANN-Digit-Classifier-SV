@@ -17,8 +17,8 @@ module simple_tests(
     parameter IN_WIDTH = 784;
 
     logic clk;
-    logic [127:0] ins[IN_WIDTH];
-    logic [127:0] outs[10];
+    logic [63:0] ins[IN_WIDTH];
+    logic [63:0] outs[10];
     logic [31:0] addr = 0;
     int classified;
 
