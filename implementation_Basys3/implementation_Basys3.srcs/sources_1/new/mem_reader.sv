@@ -53,10 +53,10 @@
 ); // Data
            
     (* rom_style="{distributed | block}" *)
-    (* ram_decomp = "power" *) logic [127:0] memory [0:(IN_WIDTH*3)-1];
+    (* ram_decomp = "power" *) logic [63:0] memory [0:(IN_WIDTH*100)-1];
     
     initial begin
-        $readmemh("MNIST_inputs.mem", memory, 0, (IN_WIDTH*3)-1);
+        $readmemh("MNIST_inputs.mem", memory, 0, (IN_WIDTH*100)-1);
     end
 
     // BRAM requires all reads and writes to occur synchronously

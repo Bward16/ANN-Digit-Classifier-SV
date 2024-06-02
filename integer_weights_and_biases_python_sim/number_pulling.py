@@ -26,4 +26,10 @@ for idx, (label, hex_values) in enumerate(hex_images):
         for hex_value in hex_values:
             file.write(f'{hex_value}\n')
 
-print("Hex value files created successfully in the 'images' subdirectory.")
+# Write labels to a file in the 'images' subdirectory
+labels_file = os.path.join(output_dir, 'labels.txt')
+with open(labels_file, 'w') as file:
+    for label in sample_labels:
+        file.write(f'{label}\n')
+
+print("Hex value files and labels file created successfully in the 'images' subdirectory.")

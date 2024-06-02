@@ -17,4 +17,4 @@ WARNING: [VRFC 10-3467] initial value of parameter 'BIASES' is omitted [C:/Users
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/simple_tests.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module max_index
 INFO: [VRFC 10-311] analyzing module simple_tests
-WARNING: [VRFC 10-3824] variable 'max_index' must explicitly be declared as automatic or static [C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/simple_tests.sv:41]
+WARNING: [VRFC 10-3824] variable 'max_index' must explicitly be declared as automatic or static [C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/simple_tests.sv:42]

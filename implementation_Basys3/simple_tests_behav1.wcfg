@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="simple_tests_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="simple_tests" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="933.590 ns"></ZoomEndTime>
+      <Cursor1Time time="5,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="225"></NameColumnWidth>
+      <ValueColumnWidth column_width="372"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/simple_tests/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simple_tests/ins" type="array">
+      <obj_property name="ElementShortName">ins[0:783][63:0]</obj_property>
+      <obj_property name="ObjectShortName">ins[0:783][63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simple_tests/outs" type="array">
+      <obj_property name="ElementShortName">outs[0:9][63:0]</obj_property>
+      <obj_property name="ObjectShortName">outs[0:9][63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simple_tests/classified" type="array">
+      <obj_property name="ElementShortName">classified[31:0]</obj_property>
+      <obj_property name="ObjectShortName">classified[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simple_tests/correct_count" type="array">
+      <obj_property name="ElementShortName">correct_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">correct_count[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simple_tests/labels" type="array">
+      <obj_property name="ElementShortName">labels[0:99][31:0]</obj_property>
+      <obj_property name="ObjectShortName">labels[0:99][31:0]</obj_property>
+   </wvobject>
+</wave_config>
