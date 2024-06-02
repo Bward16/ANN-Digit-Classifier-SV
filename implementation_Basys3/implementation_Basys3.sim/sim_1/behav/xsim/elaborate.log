@@ -9,7 +9,7 @@ WARNING: [VRFC 10-3460] index is always out of bounds for array 'WEIGHTS' [E:/Se
 WARNING: [VRFC 10-3456] index 1 is out of range [0:0] for 'WEIGHTS' [E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/neural_net.sv:26]
 WARNING: [VRFC 10-3460] index is always out of bounds for array 'BIASES' [E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/neural_net.sv:27]
 WARNING: [VRFC 10-3456] index 1 is out of range [0:0] for 'BIASES' [E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/neural_net.sv:27]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'mem_rden' [E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/simple_tests.sv:15]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'mem_rden' [E:/Seth stuff/to_appease_the_haters/CSC570ComputationalNeuroscience/implementation_Basys3/simple_tests.sv:27]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

@@ -1,4 +1,15 @@
 `timescale 1ns / 1ps
+
+
+
+
+module max_index #(parameter N = 10)(input [7:0] array [N-1:0], output reg [3:0] classified);
+
+endmodule
+
+
+
+
 module simple_tests(
 
     );
@@ -9,6 +20,7 @@ module simple_tests(
     logic [127:0] ins[IN_WIDTH];
     logic [127:0] outs[10];
     logic [31:0] addr = 0;
+    int classified;
 
     Memory_Reader#(IN_WIDTH) memy_ready(
     clk,
@@ -23,6 +35,18 @@ module simple_tests(
     );
  
 
+
+    always_comb begin
+        int i;
+        int max_index = 0;
+        classified = -1;
+        for (i = 0; i < 10; i = i + 1) begin
+            if(outs[i] > outs[max_index]) begin
+                max_index = i;
+            end
+        end
+        classified = max_index;
+    end
 
     initial begin
         clk <= 0;
@@ -50,3 +74,5 @@ module simple_tests(
     end
 
 endmodule
+
+
