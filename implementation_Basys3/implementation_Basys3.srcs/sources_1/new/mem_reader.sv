@@ -47,16 +47,16 @@
   module Memory_Reader#(parameter IN_WIDTH) (
     input clk,
     input mem_rden,        // read enable Instruction
-    input [7:0] mem_addr1, // Data Memory Addr
+    input [31:0] mem_addr1, // Data Memory Addr
     //output ERR,
     output logic [7:0] mem_dout1 [IN_WIDTH]  // Instruction
 ); // Data
            
     (* rom_style="{distributed | block}" *)
-    (* ram_decomp = "power" *) logic [7:0] memory [0:783];
+    (* ram_decomp = "power" *) logic [7:0] memory [0:(IN_WIDTH*3)-1];
     
     initial begin
-        $readmemh("MNIST_inputs.mem", memory, 0, 783);
+        $readmemh("MNIST_inputs.mem", memory, 0, (IN_WIDTH*3)-1);
     end
 
     // BRAM requires all reads and writes to occur synchronously

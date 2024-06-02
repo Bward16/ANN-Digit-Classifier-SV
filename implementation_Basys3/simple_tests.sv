@@ -7,8 +7,8 @@ module simple_tests(
 
     logic clk;
     logic [7:0] ins[IN_WIDTH];
-    logic [7:0] outs[1];
-    logic [7:0] addr = 0;
+    logic [7:0] outs[10];
+    logic [31:0] addr = 0;
 
     Memory_Reader#(IN_WIDTH) memy_ready(
     clk,

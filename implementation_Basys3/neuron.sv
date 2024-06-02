@@ -6,7 +6,7 @@ module Simple_Neuron#(
     ) 
     (
     input [7:0] x[INPUT_COUNT],
-    output logic [31:0] result
+    output logic [7:0] result
 );
 
     logic [7:0] sum;
