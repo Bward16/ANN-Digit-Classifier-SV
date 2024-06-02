@@ -2,7 +2,7 @@ module neural_net#(
 
     ) (
     input [7:0] inputs[LAYER_WIDTHS[0]],
-    output [7:0] outputs[LAYER_WIDTHS[LAYERS-1]]
+    output [7:0] outputs[LAYER_WIDTHS[LAYERS]]
 
 );
 `include "parameters.vh"

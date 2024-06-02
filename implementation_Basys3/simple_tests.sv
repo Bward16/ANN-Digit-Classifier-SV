@@ -3,7 +3,7 @@ module simple_tests(
 
     );
 
-    parameter IN_WIDTH = 2;
+    parameter IN_WIDTH = 784;
 
     logic clk;
     logic [7:0] ins[IN_WIDTH];
@@ -35,14 +35,14 @@ module simple_tests(
             #50 
             addr = addr + IN_WIDTH;
 
-            #50
-            addr = addr + IN_WIDTH;
+             #50
+             addr = addr + IN_WIDTH;
 
-            #50
-            addr = addr + IN_WIDTH;
-            
-            #50
-            addr = addr + IN_WIDTH;
+             #50
+             addr = addr + IN_WIDTH;
+
+            // #50
+            // addr = addr + IN_WIDTH;
             
             $finish;
             
