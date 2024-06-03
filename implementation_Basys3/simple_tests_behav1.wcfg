@@ -12,12 +12,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="933.590 ns"></ZoomEndTime>
-      <Cursor1Time time="5,000.000 ns"></Cursor1Time>
+      <ZoomEndTime time="208.601 ns"></ZoomEndTime>
+      <Cursor1Time time="0.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="225"></NameColumnWidth>
-      <ValueColumnWidth column_width="372"></ValueColumnWidth>
+      <ValueColumnWidth column_width="368"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="6" />
    <wvobject fp_name="/simple_tests/clk" type="logic">
@@ -44,5 +44,6 @@
    <wvobject fp_name="/simple_tests/labels" type="array">
       <obj_property name="ElementShortName">labels[0:99][31:0]</obj_property>
       <obj_property name="ObjectShortName">labels[0:99][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
 </wave_config>

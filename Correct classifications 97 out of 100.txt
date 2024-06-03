@@ -1,4 +1,3 @@
-Time resolution is 1 ps
 Correct classifications: 97 out of 100
 Class 0:
   True Positives: 13
@@ -50,5 +49,3 @@ Class 9:
   False Positives: 0
   True Negatives: 89
   False Negatives: 2
-$finish called at time : 5 us : File "C:/Users/blake/OneDrive - Cal Poly/Spring2024/CSC570/CSC570ComputationalNeuroscience/implementation_Basys3/simple_tests.sv" Line 110
-INFO: xsimkernel Simulation Memory Usage: 29528 KB (Peak: 29528 KB), Simulation CPU Usage: 11655 ms
